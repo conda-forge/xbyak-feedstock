@@ -1,5 +1,5 @@
 {% set name = "xbyak" %}
-{% set version = "5.661" %}
+{% set version = "5.891" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/herumi/xbyak/archive/v{{ version }}.tar.gz
-  sha256: fa82134eb5b9526c0cf876334a0cca38b94a0e7da644af35ea66bde22ed6e6d5
+  sha256: 3b6ba2fef1cbce8c9a2c0f6e2dc4c30eec7f17bedabb06770c8b0f63d6866475
   patches:
     - patch-Makefile.patch
 
@@ -22,7 +22,7 @@ build:
 requirements:
   build:
     - make
-    
+
 test:
   commands:
     - test -f ${PREFIX}/include/xbyak/xbyak.h  # [unix]
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/herumi/xbyak
-  summary: 'JIT assembler for x86(IA32), x64(AMD64, x86-64) by C++'
+  summary: JIT assembler for x86(IA32), x64(AMD64, x86-64) by C++
   dev_url: https://github.com/herumi/xbyak
   license: BSD-3-Clause
   license_file: COPYRIGHT
