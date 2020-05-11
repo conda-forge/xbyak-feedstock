@@ -9,8 +9,6 @@ package:
 source:
   url: https://github.com/herumi/xbyak/archive/v{{ version }}.tar.gz
   sha256: 7b5ec57fb887a25c563e24bd82a0a350d68b8b0219e94b680c040f6cd59bdc40
-  patches:
-    - patch-Makefile.patch
 
 build:
   number: 0
