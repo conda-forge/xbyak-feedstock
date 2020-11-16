@@ -5,11 +5,11 @@ Home: https://github.com/herumi/xbyak
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xbyak-feedstock/blob/master/LICENSE.txt)
 
 Summary: JIT assembler for x86(IA32), x64(AMD64, x86-64) by C++
 
-
+Development: https://github.com/herumi/xbyak
 
 Current build status
 ====================
