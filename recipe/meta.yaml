@@ -11,7 +11,8 @@ source:
   sha256: 40b41df141000688d7d629cc9f4bc313f3adfa6be0c42c520064608ed11a93fc
 
 build:
-  number: 0
+  number: 1
+  noarch: generic
   ignore_run_exports_from:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
@@ -25,14 +26,10 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/include/xbyak/xbyak.h  # [unix]
-    - test -f ${PREFIX}/include/xbyak/xbyak_mnemonic.h  # [unix]
-    - test -f ${PREFIX}/include/xbyak/xbyak_util.h  # [unix]
-    - test -f ${PREFIX}/include/xbyak/xbyak_bin2hex.h  # [unix]
-    - if not exist %LIBRARY_INC%\xbyak\xbyak.h exit 1  # [win]
-    - if not exist %LIBRARY_INC%\xbyak\xbyak_mnemonic.h exit 1  # [win]
-    - if not exist %LIBRARY_INC%\xbyak\xbyak_util.h exit 1  # [win]
-    - if not exist %LIBRARY_INC%\xbyak\xbyak_bin2hex.h exit 1  # [win]
+    - test -f ${PREFIX}/include/xbyak/xbyak.h
+    - test -f ${PREFIX}/include/xbyak/xbyak_mnemonic.h
+    - test -f ${PREFIX}/include/xbyak/xbyak_util.h
+    - test -f ${PREFIX}/include/xbyak/xbyak_bin2hex.h
 
 about:
   home: https://github.com/herumi/xbyak
