@@ -1,5 +1,5 @@
 {% set name = "xbyak" %}
-{% set version = "7.20.1" %}
+{% set version = "7.21" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/herumi/xbyak/archive/v{{ version }}.tar.gz
-  sha256: 8ec16c8296e2d5de00368a95c0c367a4c6a594a5167e62c676259215b0032799
+  sha256: 23aad8abc682205ad718d77d51e8e66a569c66de1722b8772d1afb6cbb8d300b
 
 build:
   number: 0
