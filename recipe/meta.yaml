@@ -1,10 +1,9 @@
-{% set name = "xbyak" %}
 {% set version = "7.37" %}
 
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: xbyak
+  version: "{{ version }}"
 
 source:
   url: https://github.com/herumi/xbyak/archive/v{{ version }}.tar.gz
@@ -19,7 +18,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
+    - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - cmake
     - make
